@@ -4,7 +4,7 @@
 
 ### 语法：
 Abstract class: method could be abstract or with constructors
-Interface     : methods are all abstract
+\Interface     : methods are all abstract
 
 ### 用途：
 Abstract class: permits you to make functionality that subclasses can implement or override
