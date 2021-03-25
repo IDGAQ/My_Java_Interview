@@ -8,7 +8,7 @@ Abstract class: method could be abstract or with constructors
 
 ### 用途：
 Abstract class: permits you to make functionality that subclasses can implement or override
-Interface     : only permits you to state functionality but not to implement it.
+\Interface     : only permits you to state functionality but not to implement it.
 
 ---
 #### 最后说下，多重继承和多继承的区别
