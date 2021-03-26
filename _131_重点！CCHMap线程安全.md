@@ -1,4 +1,4 @@
-# 在问完Hashmap和ConcurrentHashmap之后：
+## 在问完Hashmap和ConcurrentHashmap之后：
 
 # 问：线程安全为什么选择CCHashMap, 而不是加上Synchronized,lock的HashTable或Collection.Synchronized?
 
