@@ -1,6 +1,6 @@
 ### 在问完Hashmap和ConcurrentHashmap之后：
 
-- ![hh](https://via.placeholder.com/15/c5f015/000000?text=+) '### 问：'
+- ![hh](https://via.placeholder.com/15/c5f015/000000?text=+)
 ### 问：
 ### 线程安全为什么选择CCHashMap？
 
