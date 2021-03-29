@@ -2,7 +2,7 @@
 from object oriented to MySQL
 
 //pictures\
-![Optional Text](picture_url)
+![Text_Here](picture_url)
 
 <p align="center">
   <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=75212877,1031858063&fm=26&gp=0.jpg" width="640" height="400">
