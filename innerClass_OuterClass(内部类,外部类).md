@@ -1,0 +1,103 @@
+# innerClass(内部类)
+---
+### sample:
+```java
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    int y = 5;
+    //可以access outer class的 variable
+    int z = 2 * x;
+    //可以通过OuterClass.this access同名
+    int x = OuterClass.x*10;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    // create innerClass
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.print(myInner.y + myOuter.x);
+    system.out.print(Inner.z);
+  }
+}
+```
+
+### Why InnerClass?
+1. 多重继承，不需要复杂的interface/abstract class
+2. 封闭性，其他类不能访问
+3. 没有"is-a"关系，每个innerClass都是个独立的个体。
+
+---
+
+### 更多神奇的用法
+可以写在function里, 可以写在if statement里, 甚至可以当作return的对象
+```java
+public interface Contents {  
+    int value();  
+}  
+  
+public interface Destination {  
+    String readLabel();  
+}  
+  
+// innerClass in function
+public class Goods1 {  
+    public Destination dest(String s) {  
+        class GDestination implements Destination {  
+            private String label;  
+  
+            private GDestination(String whereTo) {  
+                label = whereTo;  
+            }  
+  
+            public String readLabel() {  
+                return label;  
+            }  
+        }  
+        return new GDestination(s);  
+    }  
+  
+//innerClass in 判断 statement(if, bool...)
+public class Goods2 {  
+    private void internalTracking(boolean b) {  
+        if (b) {  
+            class TrackingSlip {  
+                private String id;  
+  
+                TrackingSlip(String s) {  
+                    id = s;  
+                }  
+  
+                String getSlip() {  
+                    return id;  
+                }  
+            }  
+            TrackingSlip ts = new TrackingSlip("slip");  
+            String s = ts.getSlip();  
+        }  
+    }  
+  
+    public void track() {  
+        internalTracking(true);  
+    }  
+  
+ //甚至可以当作return的对象
+ public class Goods3 {  
+    public Contents cont() {  
+        return new Contents() {  
+            private int i = 11;  
+  
+            public int value() {  
+                return i;  
+            }  
+        };  
+    }  
+}   
+  
+```
+
+
+//参考： https://blog.csdn.net/github_40018627/article/details/78004680
