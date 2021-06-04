@@ -1,5 +1,5 @@
 # My_Java_Interview
-from object oriented to MySQL
+from object oriented to Redis
 
 //pictures\
 ![Text_Here](picture_url)
