@@ -1,0 +1,36 @@
+## DNS查询过程 ##
+---
+```
+Q:
+  DNS寻找地址的过程是什么?
+  
+A:
+  Step 1: OS Recursive Query to DNS Resolver ↓
+    "www.xxx.com" -> send 'Recursive Query' -> 'DNS resolver' ->  return IP address/error
+    
+    Since the operating system doesn’t know where “www.google.com” is, it queries a 'DNS resolver'.
+    The query the OS sends is a 'Recursive Query', means that the resolver has to complete the query, 
+    either returning an IP address or an error.
+    (Generally, DNS resolver is provided by your Internet Service Provider, such as ATnT; or an alternative, such as Google DNS)
+------------------------------------------------------------------------------------------------------------------------------------
+  Step2:  DNS Resolver Iterative Query to the Root Server ↓
+  
+  
+    
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+```
+<p align="center">
+  <img src="https://img-blog.csdn.net/20160302135454243?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" width="1200" height="380">
+</p>
+---
